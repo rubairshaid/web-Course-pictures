@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    margin : 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 80%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#image{
+    display : block ;
+    width :50%;
+    max-height: 80%;
+}
+h1{
+    height: 10%;
+    margin : 0;
+    padding : 20px;
+    text-align: center;
+    
+}
+button{
+    width:100px;
+    height: 50px;
+    background-color: cadetblue;
+    margin: auto 30px;
+    font-size: xx-large;
+    border: double;
+}
+.BS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}

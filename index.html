@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href = "style.css" rel="stylesheet" >
+</head>
+<body>
+    <h1>The most famous sayings of scientist</h1>
+    <div class= "container">
+        
+        <img id = "image" src = "/images/image1.jpg" >
+    </div>
+    
+
+    <div class= "BS">
+        <div>
+            <button id = "preButton"><<</button>
+            <button id = "nextButton">>></button>
+        </div>
+    </div>
+    
+    <script>
+        i=1;
+        document.getElementById("preButton").onclick= function(){
+            i=i-1;
+            if(i<1)
+            i=10;
+            document.getElementById("image").src="/images/image"+i+".jpg";
+            
+        }
+        document.getElementById("nextButton").onclick= function(){
+            i=i+1;
+            if(i>10)
+            i=1;
+            
+            document.getElementById("image").src="/images/image"+i+".jpg";
+            
+        }
+        document.getElementsByTagName("p").innerHTML=i;
+    </script>
+</body>
+</html>
